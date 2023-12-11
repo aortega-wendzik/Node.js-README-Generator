@@ -7,7 +7,8 @@ A Javascript app designed to create a clean README.md template.
 ...
 
 ## Installation
-![Screencast video](<Untitled_ Dec 10, 2023 11_42 PM.webm>)
+[Google Drive file](https://drive.google.com/file/d/1iewFeyH9Zg0cJJXFu_5s8-w1hmGX1YN6/view)
+
 ...
 
 ## Usage
