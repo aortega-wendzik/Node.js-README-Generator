@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-inquirer
+
 let questions = [
     {
       type: 'input',
@@ -41,48 +41,52 @@ let questions = [
         choices: ['Apache', 'Other', 'MIT', 'GPLv2'],
     }
   ];
-  inquirer.prompt(questions).then((answers) => {
+
+
+
+// ${answers.description}
+
+// ## Description
+
+// ...
+
+// ## Installation
+
+// ...
+
+// ## Usage
+
+// ...
+
+// ## Contributing
+
+// ...
+
+// ## License
+
+// ...
+
+// ## Table of Contents
+// - Description
+// - Installation
+// - Usage
+// - Contributing
+// - License
+
+// ## Dependencies
+// - [inquirer]: A collection of common interactive command line user interfaces. Version 8.2.0.
+// - [fs]: A built-in module that provides file system related functionality. Version 16.11.1.
+
+
+// Created by ${answers.author}`;
+function handleAnswers(answers){
+
+    return `#hellos ${answers.title}`
+}
+inquirer.prompt(questions).then((answers) => {
+    const readmeContent = handleAnswers(answers)
     // Use the answers provided by the user to generate the README file content
-    const readmeContent = `# ${answers.title}
-
-${answers.description}
-
-## Description
-
-...
-
-## Installation
-
-...
-
-## Usage
-
-...
-
-## Contributing
-
-...
-
-## License
-
-...
-
-## Table of Contents
-- Description
-- Installation
-- Usage
-- Contributing
-- License
-
-## Dependencies
-- [inquirer]: A collection of common interactive command line user interfaces. Version 8.2.0.
-- [fs]: A built-in module that provides file system related functionality. Version 16.11.1.
-
-
-Created by ${answers.author}`;
-
-
-    fs.writeFile('README.md', readmeContent, (err) => {
+    fs.writeFile('README.md', readmeContent, (err) =>{
       if (err) {
         console.error(err);
       } else {
