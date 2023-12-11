@@ -1,27 +1,27 @@
-# README.md 
-![TEST-45-blue](https://img.shields.io/badge/TEST-45-blue)
+# README TEMPLATE GENERATOR 
+![readmetemplate-1-blue](https://img.shields.io/badge/readmetemplate-1-blue)
 
 ## Description
-tst
+A Javascript app designed to create a clean README.md template. 
 
 ...
 
 ## Installation
-work
+![Screencast video](<Untitled_ Dec 10, 2023 11_42 PM.webm>)
 ...
 
 ## Usage
-test
+Following the video instructions, the user will follow the node.js prompts to fill out the README fields.
 
 ...
 
 ## Contributing
-me
+Angela Ortega-Wendzik
 
 ...
 
 ## License
-Apache
+MIT
 
 ...
 
@@ -37,4 +37,4 @@ Apache
 - [fs]: A built-in module that provides file system related functionality. Version 16.11.1.
 
 
-Created by angela
+Created by Angela
